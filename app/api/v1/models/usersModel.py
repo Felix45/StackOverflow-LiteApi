@@ -1,4 +1,6 @@
 from flask import Flask , jsonify , request
+from app.api.v1.helpers.usersHelper import UsersHelper
+
 
 
 class UsersModel:
@@ -12,6 +14,7 @@ class UsersModel:
 		
 	def get_users(self):
 		''' Returns a list of users '''
+		
 		return jsonify({'msg':'all users list'})
 		
 	def login_user(self):

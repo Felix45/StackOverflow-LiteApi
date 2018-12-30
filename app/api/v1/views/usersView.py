@@ -7,7 +7,7 @@ userV1 = Blueprint('user_v1',__name__,url_prefix='/api/v1')
 users_model = UsersModel()
 
 @userV1.route('/users/list/', methods=['POST','GET'])
-def get_sers():
+def get_users():
 	return users_model.get_users()
 
 
