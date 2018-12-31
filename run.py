@@ -1,10 +1,6 @@
-from flask import Flask
+from app import create_app
 
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-	return 'hello, world'
+app = create_app()
 	
 	
 if __name__ == '__main__':
