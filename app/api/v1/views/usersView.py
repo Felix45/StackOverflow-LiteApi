@@ -9,6 +9,10 @@ users_model = UsersModel()
 @userV1.route('/users/list/', methods=['POST','GET'])
 def get_users():
 	return users_model.get_users()
+	
+@userV1.route('/users/add/', methods=['POST'])
+def add_user():
+	return users_model.add_user(request)
 
 
 
